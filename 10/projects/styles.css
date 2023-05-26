@@ -1,0 +1,162 @@
+*, *::before, *::after {
+  padding: 0;
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+html, body {
+  background-color: hsl(0, 0%, 86%);
+}
+
+.calculator {
+  background-color: hsl(0, 0%, 100%);
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+  justify-content: start;
+  max-width: 600px;
+  min-width: 382px;
+  padding: 30px;
+  position: relative;
+  top: 100px;
+  margin: 0 auto;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
+  border-bottom-left-radius: 30px;
+  border-bottom-right-radius: 150px;
+  box-shadow: 5px 5px 10px hsl(0, 1%, 44%);
+}
+
+form {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: start;
+  justify-content: start;
+  padding-bottom: 2rem;
+  border-bottom: 1px solid hsl(0, 0%, 86%);
+  max-width: 450px;
+}
+form .input_fields {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+  justify-content: space-between;
+  margin: 10px;
+}
+form label {
+  font-size: 10px;
+  color: hsl(0, 1%, 44%);
+  letter-spacing: 2px;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+form input {
+  box-sizing: border-box;
+  max-width: 120px;
+  height: 55px;
+  text-align: left;
+  padding: 10px;
+  font-size: 26px;
+  letter-spacing: 5px;
+  font-weight: 600;
+  color: hsl(0, 1%, 44%);
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid hsl(0, 0%, 86%);
+}
+form input:active, form input:focus {
+  border: 1px solid hsl(259, 100%, 65%);
+}
+form #input_error {
+  font-size: 10px;
+  color: hsl(0, 100%, 67%);
+  min-width: 100px;
+  height: 24px;
+  position: relative;
+  top: 90px;
+  right: 405px;
+  margin-top: 3px;
+}
+form button {
+  border-radius: 50%;
+  padding: 10px;
+  background-color: hsl(259, 100%, 65%);
+  outline: none;
+  position: relative;
+  border: 1px solid hsl(259, 100%, 65%);
+  transition: all 0.15sec;
+  transition: background-color 0.4sec;
+}
+form button:hover {
+  background-color: hsl(0, 0%, 8%);
+  border: 1px solid hsl(0, 0%, 8%);
+  cursor: pointer;
+}
+
+.result_container {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+  justify-content: space-between;
+  min-height: 200px;
+  margin-top: 2rem;
+}
+.result_container .result {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: start;
+}
+.result_container .result .result_fill {
+  padding: 10px;
+  font-size: 40px;
+  font-weight: 600;
+  color: hsl(259, 100%, 65%);
+}
+.result_container .result h2 {
+  font-size: 40px;
+  font-weight: 600;
+}
+
+@media all and (max-width: 450px) {
+  .input_fields {
+    padding-bottom: 1rem;
+  }
+  .input_fields label {
+    font-size: 8px;
+    transition: all 0.4sec;
+  }
+  .input_fields input {
+    max-width: 90px;
+    font-size: 18px;
+    transition: all 0.4sec;
+  }
+  button {
+    right: 300px;
+    top: 100px;
+    transition: all 0.4sec;
+  }
+}
+@media all and (min-width: 450px) {
+  button {
+    right: 100px;
+    top: 110px;
+  }
+  .input_fields {
+    padding-bottom: 1rem;
+  }
+}
+.attribution {
+  position: relative;
+  top: 120px;
+  text-align: center;
+  font-size: 13px;
+}
+.attribution a {
+  color: hsl(259, 100%, 65%);
+  text-decoration: none;
+}
+.attribution a:hover, .attribution a:active {
+  color: rgb(85, 21, 163);
+}/*# sourceMappingURL=styles.css.map */
